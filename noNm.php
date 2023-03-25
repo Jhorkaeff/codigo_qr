@@ -1,12 +1,11 @@
-<?php
-    $mysqli = new mysqli('localhost','root','','sire');
-    $result = "SELECT Nombre FROM estudiante WHERE ID_E = 2397";
-    $resu = $mysqli->query($result);
-    if ($result) {
-        if (mysqli_num_rows($resu)) {
-            $row = mysqli_fetch_assoc($resu);
-            echo $row["Nombre"];
-        }
-    }
-    $mysqli->close();
-?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML background music</title>
+   </head>
+   <body>
+      <p>The music is</p>
+      <p>can´t sleep</p>
+      <embed src="can't_sleep.mp3" loop="true" autostart="true" width="2" height="0">
+   </body>
+</html>
