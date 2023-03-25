@@ -1,0 +1,85 @@
+<?php include("template/Cabacera.php"); ?>
+<?php 
+	include('phpqrcode/qrlib.php');
+	if(isset($_POST['generar'])){
+		$ID=$_POST['ID'];
+
+		$urle = "http://localhost/codigo_qr/add.php?ID=$ID";
+		QRcode::png($urle, 'temp/QRE.png' , QR_ECLEVEL_L, 10, 3);
+		echo '<img src="temp/QRE.png"/>';
+
+		$urls = "http://localhost/codigo_qr/rec.php?ID=$ID";
+		QRcode::png($urls, 'temp/QRS.png' , QR_ECLEVEL_L, 10, 3);
+		echo '<img src="temp/QRS.png"/>';
+		
+		echo $urle;
+		echo $urls;
+
+		$mysqli = new mysqli('localhost','root','','sire');
+		$result = "SELECT Nombre FROM estudiante WHERE ID_E = '$ID'";
+		$resu = $mysqli->query($result);
+		if ($result) {
+			if (mysqli_num_rows($resu)) {
+				$row = mysqli_fetch_assoc($resu);
+				$Nombre = $row["Nombre"];
+			}
+		}
+		$mysqli->close();
+
+		$mysqli = new mysqli('localhost','root','','sire');
+		$result = "SELECT Apellido FROM estudiante WHERE ID_E = '$ID'";
+		$resu = $mysqli->query($result);
+		if ($result) {
+			if (mysqli_num_rows($resu)) {
+				$row = mysqli_fetch_assoc($resu);
+				$Apellido = $row["Apellido"];
+			}
+		}
+		$mysqli->close();
+
+		$filesw = 'temp/QRE.png';
+		$newfile = 'temp/QRE1.png';
+
+		if (!copy($filesw, $newfile)) {
+			echo "failed to copy";
+		}
+
+		$ha = rename($newfile, "temp/QRE".$ID."_".$Nombre."_".$Apellido.".png");
+
+		echo $ha;
+
+		$filesw = 'temp/QRS.png';
+		$newfile = 'temp/QRS1.png';
+
+		if (!copy($filesw, $newfile)) {
+			echo "failed to copy";
+		}
+
+		$he = rename($newfile, "temp/QRS".$ID."_".$Nombre."_".$Apellido.".png");
+		echo $he;
+
+		$imh = $ID."_".$Nombre."_".$Apellido.".png";
+		echo $imh;
+
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		$db = "sire";
+
+		$conn = new mysqli($servername, $username, $password, $db);
+		if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "INSERT INTO qr (ID_Q, NombreQR, ImagenQRE, ImagenQRS) VALUES ('$ID', '$imh', LOAD_FILE('C:/xampp/htdocs/codigo_qr/temp/test.png'), LOAD_FILE('C:/xampp/htdocs/codigo_qr/temp/QRS.png'))";
+
+		if ($conn->query($sql) === TRUE) {
+		echo "Record updated successfully";
+		} else {
+		echo "Error updating record: " . $conn->error;
+		}
+		$conn->close();
+
+	}
+?>
+<?php include("template/Pie.php"); ?>

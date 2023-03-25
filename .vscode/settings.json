@@ -1,0 +1,3 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/phpqrcode/zlib-1.2.12"
+}
