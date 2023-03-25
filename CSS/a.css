@@ -1,0 +1,9 @@
+body{
+    font-family: "Times New Roman", Times, serif;;
+    background-image: url("halo3odst.gif");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}

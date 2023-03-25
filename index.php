@@ -3,8 +3,9 @@
 <html>
 	<head>
 		<title>Hola, Mundo 1</title>
+		<link rel= "stylesheet" href="CSS/a.css" >
 	</head>
-	<body background="img/ne.jpg">
+	<body>
 		<form action="mm.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 				<font color = "white">
