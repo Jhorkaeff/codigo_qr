@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>Hola, Mundo 1</title>
-		<link rel= "stylesheet" href="CSS/a.css" >
+		<link rel= "stylesheet" href="CSS/css/a.css" >
 	</head>
 	<body>
 		<form action="mm.php" method="post" enctype="multipart/form-data">
