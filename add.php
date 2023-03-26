@@ -223,7 +223,7 @@
                     }
                     $sql = "SELECT Modalidad From estudiante WHERE ID_E = '$I'";
 
-                    for
+                    //for
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0){
                         while($row = $result->fetch_assoc()){

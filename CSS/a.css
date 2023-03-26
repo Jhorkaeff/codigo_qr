@@ -2,6 +2,7 @@ body{
     font-family: "Times New Roman", Times, serif;;
     background-image: url("halo3odst.gif");
     background-color: #ffffff;
+
     height: 500px;
     background-position: center; 
     background-repeat: no-repeat;
@@ -10,6 +11,7 @@ body{
 .col-sm-8{
     float: left;
     padding: 2em;
+    color: white;
     text-decoration-color: rgb(177, 37, 37);
     text-decoration-style: wavy;
     font-size: 20px;
