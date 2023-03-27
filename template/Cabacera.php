@@ -21,7 +21,7 @@
 		var navbar = document.getElementById("navbar");
         var menu = document.getElementById("menu");
 
-        window.onscrol = function(){
+        window.onscroll = function(){
             if(window.pageYOffset >= menu.offsetTop){
                 navbar.classList.add("sticky");
             }
