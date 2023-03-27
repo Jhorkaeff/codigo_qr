@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hola, Mundo 1</title>
+		<title>Hola</title>
 	</head>
 	<body background="img/ne.jpg">
 		<form action="car.php" method="post" enctype="multipart/form-data">
