@@ -2,9 +2,7 @@
 <html>
 	<head>
 		<title>Hola, Mundo 1</title>
-		<link rel="stylesheet" href="CSS/css/Cargar.css">
 	</head>
-	
 	<body background="img/ne.jpg">
 		<?php include("template/Cabacera.php"); ?>
 		<section>
