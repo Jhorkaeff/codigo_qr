@@ -1,10 +1,11 @@
 <?php include("template/Cabacera.php"); ?>
+
 <link rel="stylesheet" href="CSS/css/Cargar.css">
+
 	<body background="img/ne.jpg">
 		<section>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
-				<font color = "white">
 					<h3>DBQR</h3>
 					<h4> 
 						<p><font color="blue">IMPORTANTE </font> Agregue los datos del estudiante</p>
