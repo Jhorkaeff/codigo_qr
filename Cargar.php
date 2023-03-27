@@ -6,7 +6,7 @@
 	</head>
 	
 	<body background="img/ne.jpg">
-		<?php include("template/Cabacera.php"); ?>
+		<header><?php include("template/Cabacera.php"); ?></header>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 				<font color = "white">
