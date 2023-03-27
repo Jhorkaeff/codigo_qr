@@ -7,7 +7,7 @@
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 					<h3>DBQR</h3>
-					<h4>IMPORTANTE<p>Agregue los datos del estudiante</p></h4>
+					<h4>IMPORTANTE<span>Agregue los datos del estudiante</span></h4>
 						<li><font color="blue">Calidad H de imagen: <p>se le dara la mas alta calidad posible a las imagenes qr</p></li>
 						<li><font color="blue">Tamaño 10: <p>el tamaño proporcional que se le dara a las qr</p></li>
 					<p>Nivel: H</p>
