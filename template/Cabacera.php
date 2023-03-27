@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Bienvenido Sitio </title>
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
+        <link rel="stylesheet" href="CSS/css/Cargar.css">
     </head>
     <body>
         <nav>
