@@ -8,11 +8,13 @@
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
     </head>
     <body>
-        <header>
-            <a href="#" class="logo">Logo</a>
-            <ul>
-                <li><a href="Index.php">Inicio</a></li>
-                <li><a href="Index.php">Crear QR</a></li>
-                <li><a href="Cargar.php">Cargar QR</a></li>
-            </ul>
-        </header>
+        <div class="header">
+            <nav>
+                <img src="/img/logo.png" class="logo">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Crear QR</li>
+                    <li>Cargar QR</li>
+                </ul>
+            </nav>
+        </div>

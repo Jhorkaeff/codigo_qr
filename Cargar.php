@@ -1,4 +1,5 @@
 <?php include("template/Cabacera.php"); ?>
+	<body background="img/ne.jpg">
 		<section>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
