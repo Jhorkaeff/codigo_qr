@@ -1,10 +1,20 @@
-        <footer>
-        <nav class="navbar navbar-default navbar-light bg-primary">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contactanos</a>
-                </li>
-            </ul>
-    </footer>
+<link rel="stylesheet" href="CSS/css/Pie.css">
+        <footer>            
+            <div class="footer-contenido">
+                <h3>SIRE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-gmail"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2020 codeOpacity. designed by <span>SIRE</span></p>
+            </div>
+        </footer>
     </body>
 </html>
