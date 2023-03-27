@@ -4,7 +4,7 @@
             <div class="footer-contenido">
                 <h3>SIRE</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed</p>
+                    sed, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
                 <ul class="socials">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
