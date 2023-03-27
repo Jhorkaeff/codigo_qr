@@ -1,10 +1,7 @@
 <?php include("template/Cabacera.php"); ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Hola, Mundo 1</title>
-	</head>
+<link rel="stylesheet" href="CSS/css/Cargar.css">
 	<body background="img/ne.jpg">
+		<section>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 				<font color = "white">
@@ -41,6 +38,7 @@
 			</div>
 			<button type="submit" value="Generar" name="generar">Guardar</button>
 		</form>
+		</section>
 	</body>
 </html>
 <?php include("template/Pie.php"); ?>  

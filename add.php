@@ -9,6 +9,7 @@
     $output = [];
     parse_str($parts['query'], $output);
     $I = $output['ID'];
+    
 ?>
 <?php
     $servername = "localhost";
