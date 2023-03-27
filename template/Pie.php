@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="CSS/css/Pie.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <footer>            
             <div class="footer-contenido">
                 <h3>SIRE</h3>
