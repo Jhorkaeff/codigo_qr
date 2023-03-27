@@ -1,4 +1,4 @@
-
+<?php include("template/Cabacera.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>

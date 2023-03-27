@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Hola, Mundo 1</title>
-	</head>
-	<body background="img/ne.jpg">
-		<?php include("template/Cabacera.php"); ?>
+<?php include("template/Cabacera.php"); ?>
 		<section>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
