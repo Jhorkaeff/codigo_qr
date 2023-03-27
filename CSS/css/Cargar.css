@@ -1,6 +1,6 @@
 body
 {
-    position: inherit;
+    position: fixed;
 }
 
 .col-sm-8 h3
