@@ -8,15 +8,10 @@
     </head>
     <body>
         <header>
-            <h1> Tecnologico Universitario PLayacar </h1>
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Index.php">Crear QR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Cargar.php">Cargar QR</a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="Index.php">Inicio</a></li>
+                <li><a href="Index.php">Crear QR</a></li>
+                <li><a href="Cargar.php">Cargar QR</a></li>
+            </ul>
         </header>
