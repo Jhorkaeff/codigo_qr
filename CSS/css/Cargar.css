@@ -6,7 +6,7 @@
  box-sizing: border-box;
  font-family: 'Poppins', sans-serif;
 }
-nav
+header
 {
     position: fixed;
     top: 0;
@@ -17,8 +17,9 @@ nav
     align-items: center;
     transition: 0.6s;
     padding: 40px 100px;
+    z-index: 100000;
 }
-nav.logo
+header .logo
 {
     position: relative;
     font-weight: 700;
@@ -27,19 +28,19 @@ nav.logo
     font-size: 2em;
     text-transform: uppercase;
 }
-nav ul
+header ul
 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul li
+header ul li
 {
     position: relative;
     list-style: none;
 }
-nav ul li a
+header ul li a
 {
     position: relative;
     margin: 0 15px;

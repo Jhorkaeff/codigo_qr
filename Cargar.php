@@ -1,9 +1,9 @@
-<?php include("template/Cabacera.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Hola, Mundo 1</title>
 	</head>
+	<?php include("template/Cabacera.php"); ?>
 	<body background="img/ne.jpg">
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
