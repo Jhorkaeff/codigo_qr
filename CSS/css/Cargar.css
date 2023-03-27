@@ -1,8 +1,6 @@
-body
-{
-    position:relative;
+body{
+    overflow-x: hidden;
 }
-
 .col-sm-8 h3
 {
     color: #fff;
