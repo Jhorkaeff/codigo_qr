@@ -129,3 +129,48 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<?php
+    $mysqli = new mysqli('localhost','root','','sire');
+    $re = $mysqli->query("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'sire' AND TABLE_NAME = 'horario_salida'");
+
+    for ($i=0; $i < $re->num_rows; $i++){
+        $fila_usuario = $re->fetch_assoc();
+        if ($i == 0) {
+            continue;
+        }
+        $pe = $fila_usuario['COLUMN_NAME'];
+        echo $pe;
+    }
+    $res = $mysqli->query("SELECT * FROM horario_salida");
+    
+    for ($i=0; $i < $re->num_rows; $i++){
+        while($row = mysqli_fetch_array($res)){
+            echo $row[$pe];
+        }
+    }
+    $mysqli->close();
+
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<?php
+$mysqli = new mysqli('localhost','root','','sire');
+
+$res = $mysqli->query("SELECT * FROM horario_salida");
+while($row = $res->fetch_assoc()){
+    $keys = array_keys($row);
+    if ($keys === array_filter($keys, 'is_numeric')){
+        $data = array_combine(array_map('intval', $keys), array_values($row));
+    }
+        foreach ($row as $key => $value){
+            print_r($key);
+            print_r($value);
+        }
+    }
+
+$mysqli->close();
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
