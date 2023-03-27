@@ -1,7 +1,4 @@
-
-        <link rel="stylesheet" href="CSS/css/Cargar.css">
     
-    <body>
         <header>
             <a href="#" class="logo">Logo</a>
             <ul>
