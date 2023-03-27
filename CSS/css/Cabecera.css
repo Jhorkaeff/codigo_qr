@@ -31,17 +31,3 @@ nav ul li{
     color: #fff;
 }
 
-nav.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px 8%;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: padding 1s;
-}
-nav.sticky ul{
-    width: auto;
-}
