@@ -16,5 +16,3 @@
                 <li><a href="Cargar.php">Cargar QR</a></li>
             </ul>
         </header>
-    </body>
-</html>
