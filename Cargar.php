@@ -3,8 +3,9 @@
 	<head>
 		<title>Hola, Mundo 1</title>
 	</head>
-	<body>
-		<?php include("template/Cabacera.php") ?>
+	
+	<body background="img/ne.jpg">
+		<?php include("template/Cabacera.php"); ?>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 				<font color = "white">
