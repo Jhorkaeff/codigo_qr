@@ -8,11 +8,25 @@
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
     </head>
     <body>
-        <nav>
+        <nav id="navbar">
             <img src="/img/logo.png" class="logo">
-            <ul>
+            <ul id="menu">
                 <li>Inicio</li>
                 <li>Crear QR</li>
                 <li>Cargar QR</li>
             </ul>
         </nav>
+
+    <script>
+		var navbar = document.getElementById("navbar")
+        var menu = document.getElementById("menu")
+
+        window.onscrol = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky")
+            }
+            else{
+                navbar.classList.remove("sticky")
+            }
+        }
+	</script>

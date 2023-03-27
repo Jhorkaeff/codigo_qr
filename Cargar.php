@@ -39,6 +39,4 @@
 			<button type="submit" value="Generar" name="generar">Guardar</button>
 		</form>
 		</section>
-	</body>
-</html>
 <?php include("template/Pie.php"); ?>  
