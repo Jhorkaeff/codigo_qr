@@ -18,3 +18,13 @@ body{
     color: #ffffff;
     font-size: 15px;
 }
+.col-sm-8 li
+{
+    color: #25b6f0;
+    font-size: 15px;
+    text-align: center;
+}
+.col-sm-8 li p
+{
+    color: #fff;
+}

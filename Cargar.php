@@ -8,7 +8,7 @@
 			<div class = "col-sm-8">
 					<h3>DBQR</h3>
 					<h4>IMPORTANTE: <span>Agregue los datos del estudiante</span></h4>
-					<h4>Calidad H de imagen: <span>se le dara la mas alta calidad posible a las imagenes qr</span></h4>
+					<li>Calidad H de imagen: <p>se le dara la mas alta calidad posible a las imagenes qr</p></li>
 					<li>Tamaño 10: <span>el tamaño proporcional que se le dara a las qr</span></li>
 					<p>Nivel: H</p>
 					<p>Tamaño: 10</p>
