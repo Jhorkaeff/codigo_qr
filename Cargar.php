@@ -7,9 +7,11 @@
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 					<h3>DBQR</h3>
+					<br>
 					<h4>IMPORTANTE: <span><font color="white">Agregue los datos del estudiante</font></span></h4>
 					<br>
 					<li>Calidad H de imagen: <span><font color="white">se le dara la mas alta calidad posible a las imagenes qr</font></span></li>
+					<br>
 					<li>Tamaño 10: <span><font color="white">Calidad H de imagen: el tamaño proporcional que se le dara a las qr</font></span></li>
 					<br>
 					<p>Nivel: H</p>
@@ -40,7 +42,8 @@
 			<button type="submit" value="Generar" name="generar">Guardar</button>
 		</form>
 		</section>
-		<script>
+	<?php include("template/Pie.php"); ?>  
+	<script>
 		var navbar = document.getElementById("navbar");
         var menu = document.getElementById("menu");
 
@@ -53,6 +56,5 @@
             }
         }
 	</script>	
-<?php include("template/Pie.php"); ?>  
 </body>
 </html>
