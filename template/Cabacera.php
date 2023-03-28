@@ -7,7 +7,7 @@
         <title> Bienvenido Sitio </title>
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
     </head>
-    <body background="img/ne.jpg">
+    <body>
         <nav id="navbar">
             <img src="/img/logo.png" class="logo">
             <ul id="menu">
