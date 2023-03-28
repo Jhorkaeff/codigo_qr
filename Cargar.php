@@ -44,6 +44,7 @@
 		</section>
 	<?php include("template/Pie.php"); ?>  
 	<script>
+		<?php include("template/Cabacera.php"); ?>
 		var navbar = document.getElementById("navbar");
         var menu = document.getElementById("menu");
 
