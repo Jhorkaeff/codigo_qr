@@ -42,9 +42,9 @@
 			<button type="submit" value="Generar" name="generar">Guardar</button>
 		</form>
 		</section>
-	<?php include("template/Pie.php"); ?>  
+	<?php include("template/Pie.php"); ?>
+	<?php include("template/Cabacera.php"); ?>  
 	<script>
-		<?php include("template/Cabacera.php"); ?>
 		var navbar = document.getElementById("navbar");
         var menu = document.getElementById("menu");
 
