@@ -2,7 +2,8 @@
 
 <link rel="stylesheet" href="CSS/css/Cargar.css">
 
-		<section class="sec1">
+	<section class="sec1"></section>	
+	<section class="sec2">
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 					<h3>DBQR</h3>
