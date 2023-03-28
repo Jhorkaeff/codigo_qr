@@ -54,3 +54,5 @@
         }
 	</script>	
 <?php include("template/Pie.php"); ?>  
+</body>
+</html>

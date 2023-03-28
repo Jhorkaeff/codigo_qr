@@ -17,5 +17,3 @@
                 <p>copyright &copy;2020 codeOpacity. designed by <span>SIRE</span></p>
             </div>
         </footer>
-    </body>
-</html>
