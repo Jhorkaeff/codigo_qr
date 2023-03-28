@@ -4,12 +4,12 @@ section {
     height: 100vh;
 }
 
-section .sec1{
-    background: url(/img/ne.jpg);
+section.sec1{
+    background: url(ne.jpg);
     background-size: cover;
 }
 
-section .sec2
+section.sec2
 {
     height: auto;
 }
