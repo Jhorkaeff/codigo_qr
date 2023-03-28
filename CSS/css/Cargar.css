@@ -24,3 +24,7 @@ body{
     font-size: 15px;
     text-align: center;
 }
+.col-sm-8 li span
+{
+    color: #fff;
+}
