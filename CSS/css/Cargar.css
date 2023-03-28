@@ -5,7 +5,7 @@ section {
 }
 
 section .sec1{
-    background: url("/img/ne.jpg");
+    background: url(/img/ne.jpg);
     background-size: cover;
 }
 
