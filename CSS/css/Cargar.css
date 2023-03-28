@@ -6,7 +6,7 @@ section {
 
 section .sec1
 {
-    background: url("ne.jpg");
+    background: url("/img/ne.jpg");
     box-sizing: border-box;
     height: auto;
 }
