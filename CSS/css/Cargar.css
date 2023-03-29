@@ -1,4 +1,9 @@
 
+section.sec2
+{
+    background-image: url("/img/ne.jpg");
+}
+
 .col-sm-8 h3
 {
     color: #fff;
