@@ -40,7 +40,7 @@
 			</div>
 			<button type="submit" value="Generar" name="generar">Guardar</button>
 		</form>
-		</section>
+	</section>
 	<?php include("template/Pie.php"); ?> 
 	<script>
 		var navbar = document.getElementById("navbar");
