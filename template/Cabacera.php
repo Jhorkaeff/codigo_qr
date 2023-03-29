@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
     </head>
     <body>
-    <div class="container">
-        <nav id="navbar">
-            <img src="/img/logo.png" class="logo">
-            <ul id="menu">
-                <li>Inicio</li>
-                <li>Crear QR</li>
-                <li>Cargar QR</li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav id="navbar">
+                <img src="/img/logo.png" class="logo">
+                <ul id="menu">
+                    <li>Inicio</li>
+                    <li>Crear QR</li>
+                    <li>Cargar QR</li>
+                </ul>
+            </nav>
