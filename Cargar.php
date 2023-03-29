@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="CSS/css/Cargar.css">
 	
-	<section class="sec2">
+	<section>
 		<form action="car.php" method="post" enctype="multipart/form-data">
 			<div class = "col-sm-8">
 					<h3>DBQR</h3>
@@ -54,6 +54,7 @@
                 navbar.classList.remove("sticky");
             }
         }
-	</script>	
+	</script>
+	</div>	
 </body>
 </html>
