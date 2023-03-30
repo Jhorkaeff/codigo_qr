@@ -1,14 +1,18 @@
 <?php
-$mysqli = new mysqli('localhost','root','','sire');
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "sire";
 
-$re = $mysqli->query("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'sire' AND TABLE_NAME = 'horario_salida'");
-for($i=0; $i < $re->num_rows; $i++){
-    $fila_usuario = $re->fetch_assoc();
-    if ($i == 0) {
-        continue;
-    }
-    $ka = $fila_usuario['COLUMN_NAME']."</br>";
-    explode(", ", $ka);
-    echo $ka;
+$conn = new mysqli($servername, $username, $password, $db);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+$e = "tup2397@tecplayacar.edu.mx";
+$sql = "SELECT Correo From estudiante WHERE LOWER(Correo) = '".strtolower($e)."'";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$Correo = $row['Correo'];
+echo $Correo;
 ?>
