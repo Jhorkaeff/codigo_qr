@@ -29,7 +29,7 @@
             </tr>
             <?php    
             $mysqli = new mysqli('localhost','root','','sire');
-            $sql = $mysqli->query ("SELECT * FROM horario_salida WHERE");
+            $sql = $mysqli->query ("SELECT * FROM horario_salida");
             while ($row = mysqli_fetch_row($sql)){
                 unset($row[0]); 
                 $ke = implode('</td><td>', $row);
