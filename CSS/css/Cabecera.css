@@ -7,41 +7,38 @@ body
     font-size: 1.2rem;
     line-height: 1.6em;
 }
-nav
-{
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-}
-.logo {
-    width: 150px;
-    margin: 20px 0;
-    cursor: pointer;
-}
-nav ul
-{
-    background: #000;
-    width: 100%;
-    margin-top: 10px;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 20px 30px;
+.header{
+    background: #333;
     color: #fff;
+    padding: 2rem 0;
 }
-
-nav.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px 8%;
-    background: #000;
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+.logo-nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    transition: padding 1s;
+    align-items: center;
 }
-nav.sticky ul{
-    width: auto;
+.logo1 {
+    letter-spacing: 20px;
+    font-size: 1.4em;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background: chocolate;
 }

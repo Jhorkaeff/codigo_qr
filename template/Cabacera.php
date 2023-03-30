@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
+            <div class="container logo-nav">
                 <a href="#" class="logo1">SIRE</a>
                 <nav class="navigation">
                     <ul>
