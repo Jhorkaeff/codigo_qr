@@ -1,7 +1,7 @@
 <?php include("template/Cabacera.php"); ?>
 
 <link rel="stylesheet" href="CSS/css/Cargar.css">
-	
+	<div class="fondo-animado">	
 		<section class="main">
 			<form action="car.php" method="post" enctype="multipart/form-data">
 				<div class = "col-sm-8">
@@ -41,5 +41,6 @@
 			</form>
 		</section>
 		<?php include("template/Pie.php"); ?> 
+	</div>
 </body>
 </html>
