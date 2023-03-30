@@ -9,7 +9,7 @@
     </head>
     <body>
             <nav id="navbar">
-                <img src="/img/logo1.png" class="logo">
+                <img class="logo" src="/img/logo1.png" alt="">
                 <ul id="menu">
                     <li>Inicio</li>
                     <li>Crear QR</li>
