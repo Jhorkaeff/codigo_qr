@@ -55,6 +55,5 @@
 					}
 				}
 			</script>
-		</div>	
 </body>
 </html>
