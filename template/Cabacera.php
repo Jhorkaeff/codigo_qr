@@ -10,7 +10,7 @@
     <body>
         <header class="header">
             <div class="container logo-nav">
-                <a href="#" class="logo1">SIRE</a>
+                <img class="logo1" src="img/sirelogo">
                 <nav class="navigation">
                     <ul>
                         <li><a href="#">Inicio</a></li>

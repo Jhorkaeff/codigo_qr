@@ -6,11 +6,17 @@ body
     color: #333;
     font-size: 1.2rem;
     line-height: 1.6em;
+    margin: 0;
 }
 .header{
-    background: #333;
+    background: #0f0f0f;
     color: #fff;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 .header a {
     color: #fff;
@@ -22,12 +28,13 @@ body
     align-items: center;
 }
 .logo1 {
-    letter-spacing: 15px;
-    font-size: 1.3em;
+    padding-left: 100px;
 }
+
 .navigation ul{
     margin: 0;
     padding: 0;
+    padding-right: 100px;
     list-style: none;
 }
 .navigation ul li{
