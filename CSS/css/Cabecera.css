@@ -7,6 +7,7 @@ body
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/FondoAzul.jpg);
     background-position: center;
     background-size:initial;
+    margin: 0;
 }
 nav
 {
@@ -14,7 +15,7 @@ nav
     padding: 20px 0;
     text-align: center;
 }
-.logo{
+.logo {
     width: 150px;
     margin: 20px 0;
     cursor: pointer;

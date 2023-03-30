@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
     </head>
     <body>
+        <header>
             <nav id="navbar">
                 <img class="logo" src="/img/logo1.png" alt="">
                 <ul id="menu">
@@ -16,3 +17,4 @@
                     <li>Cargar QR</li>
                 </ul>
             </nav>
+        </header>
