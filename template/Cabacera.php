@@ -8,13 +8,15 @@
         <link rel="stylesheet" href="CSS/css/Cabecera.css">
     </head>
     <body>
-        <header>
-            <nav id="navbar">
-                <img class="logo" src="/img/logo1.png" alt="">
-                <ul id="menu">
-                    <li>Inicio</li>
-                    <li>Crear QR</li>
-                    <li>Cargar QR</li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="logo1">SIRE</a>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Crear QR</a></li>
+                        <li><a href="#">Cargar QR</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>

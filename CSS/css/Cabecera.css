@@ -2,12 +2,10 @@
 
 body
 {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/FondoAzul.jpg);
-    background-position: center;
-    background-size:initial;
-    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
 }
 nav
 {
