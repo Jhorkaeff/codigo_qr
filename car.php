@@ -7,12 +7,7 @@
 		$path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
 		$path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);  
 
-<<<<<<< HEAD
-			$urle = "http://localhost/codigo_qr/
-			add.php?ID=$ID";
-	=======
-			$urle = "$path/add.php?ID=$ID";
-	>>>>>>> 10aa8b9969becc68991d8d40f004bc236ecd1857
+		$urle = "$path/add.php?ID=$ID";
 		QRcode::png($urle, 'temp/QRE.png' , QR_ECLEVEL_L, 10, 3);
 		echo '<img src="temp/QRE.png"/>';
 
@@ -22,7 +17,6 @@
 
 		echo $urle;
 		echo $urls;
-
 		
 		$mysqli = new mysqli('localhost','root','','sire');
 		$result = "SELECT Nombre FROM estudiante WHERE ID_E = '$ID'";
