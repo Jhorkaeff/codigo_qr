@@ -7,7 +7,7 @@
 		$path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
 		$path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);  
 
-	<<< HEAD
+<<<<<<< HEAD
 			$urle = "http://localhost/codigo_qr/
 			add.php?ID=$ID";
 	=======
