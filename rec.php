@@ -20,7 +20,7 @@
     $d = date("d_m_Y");
 
     $conn = new mysqli($servername, $username, $password, $db);
-    if ($conn->connect_error) {
+    if ($conn->connect_error) { 
     die("Connection failed: " . $conn->connect_error);
     }
     $sql = "ALTER TABLE horario_salida ADD COLUMN IF NOT EXISTS `".$d."` datetime";
