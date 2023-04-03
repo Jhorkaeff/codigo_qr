@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="CSS/css/Cargar.css">
 	<div class="fondo-animado">	
-		<section class="main">
+		<main class="main">
 			<form action="car.php" method="post" enctype="multipart/form-data">
 				<div class = "col-sm-8">
 					<h3>DBQR</h3>
@@ -39,7 +39,7 @@
 				</div>
 				<button type="submit" value="Generar" name="generar">Guardar</button>
 			</form>
-		</section>
+		</main>
 		<?php include("template/Pie.php"); ?> 
 	</div>
 </body>

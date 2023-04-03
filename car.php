@@ -1,4 +1,3 @@
-<?php include("template/Cabacera.php"); ?>
 <?php 
 	include('phpqrcode/qrlib.php');
 	if(isset($_POST['generar'])){
@@ -8,7 +7,7 @@
 		$path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);  
 
 		$urle = "$path/add.php?ID=$ID";
-		QRcode::png($urle, 'temp/QRE.png' , QR_ECLEVEL_L, 10, 3);
+		QRcode::png($urle, 'temp/QRE.png', QR_ECLEVEL_L, 10, 3);
 		echo '<img src="temp/QRE.png"/>';
 
 		$urls = "$path/rec.php?ID=$ID";
