@@ -40,8 +40,7 @@
 				<button type="submit" value="Generar" name="generar">Guardar</button>
 			</form>
 		</section>
-		<?php include("template/car.php"); ?>
-		
+
 		<?php include("template/Pie.php"); ?> 
 	</div>
 </body>
