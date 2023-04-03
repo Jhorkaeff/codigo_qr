@@ -15,9 +15,6 @@
 		QRcode::png($urls, 'temp/QRS.png' , QR_ECLEVEL_L, 10, 3);
 		echo '<img src="temp/QRS.png"/>';
 
-		echo $urle;
-		echo $urls;
-
 		
 		$mysqli = new mysqli('localhost','root','','sire');
 		$result = "SELECT Nombre FROM estudiante WHERE ID_E = '$ID'";

@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="CSS/css/Cargar.css">
 		<div class="fondo-animado">	
 		<section class="main">
-			<form action="car.php" method="post" enctype="multipart/form-data">
+			<form action="Cargar.php" method="post" enctype="multipart/form-data">
 				<div class = "contenidou">
 					<h3>DBQR</h3>
 					
@@ -36,11 +36,79 @@
 								?>
 							</select>
 						</div>
+						<div class="form-group">
+							<label>QR de: </label>
+							<select name="qrd">
+							<option value="entrada">Entrada</option>
+                    		<option value="salida">Salida</option>
+							</select>
+						</div>
 				</div>
 				<button type="submit" value="Generar" name="generar">Cargar</button>
 			</form>
 		</section>
 		</div>
+
+		<?php
+		include('phpqrcode/qrlib.php');
+		if(isset($_POST['generar'])){
+			$ID=$_POST['ID'];
+
+			$path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+			$path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);
+
+			$mysqli = new mysqli('localhost','root','','sire');
+			$result = "SELECT Nombre FROM estudiante WHERE ID_E = '$ID'";
+			$resu = $mysqli->query($result);
+			if ($result) {
+				if (mysqli_num_rows($resu)) {
+					$row = mysqli_fetch_assoc($resu);
+					$Nombre = $row["Nombre"];
+				}
+			}
+
+			$resultp = "SELECT Apellido FROM estudiante WHERE ID_E = '$ID'";
+			$resud = $mysqli->query($resultp);
+			if ($resultp) {
+				if (mysqli_num_rows($resud)) {
+					$row = mysqli_fetch_assoc($resud);
+					$Apellido = $row["Apellido"];
+				}
+			}
+
+			$imh = $ID."_".$Nombre."_".$Apellido.".png";
+
+			switch($_POST['qrd']){
+				case "entrada":
+					$urle = "$path/add.php?ID=$ID";
+					QRcode::png($urle, 'temp/QRE.png' , QR_ECLEVEL_L, 10, 3);
+					echo '<img src="temp/QRE.png"/>';
+
+					$sql = "UPDATE qr SET NombreQR = '$imh', ImagenQRE = LOAD_FILE('C:/xampp/htdocs/codigo_qr/temp/QRE.png') WHERE ID_Q = '$ID'";
+					if ($mysql->query($sql) === TRUE) {
+						echo "Record updated successfully";
+					} else {
+						echo "Error updating record: " . $conn->error;
+					}
+					$conn->close();
+
+				case "salida":
+					$urls = "$path/rec.php?ID=$ID";
+					QRcode::png($urls, 'temp/QRS.png' , QR_ECLEVEL_L, 10, 3);
+					echo '<img src="temp/QRS.png"/>';
+
+					$sql = "UPDATE qr SET NombreQR = '$imh', ImagenQRS = LOAD_FILE('C:/xampp/htdocs/codigo_qr/temp/QRS.png') WHERE ID_Q = '$ID'";
+					if ($mysql->query($sql) === TRUE) {
+						echo "Record updated successfully";
+					} else {
+						echo "Error updating record: " . $conn->error;
+					}
+					$conn->close();
+					
+			}
+		}
+		?>
+
 		<?php include("template/Pie.php"); ?> 
-</body>
+	</body>
 </html>

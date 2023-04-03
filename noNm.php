@@ -1,4 +1,5 @@
 <?php
-$k = "Kevin Jhorkaeff ";
-echo strtolower(str_replace(' ', '', $k));
+    $path = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+    $path .=$_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);        
+    echo $path;
 ?>

@@ -75,7 +75,7 @@
 
                         $sth = $conn->query($sql);
                         $result=mysqli_fetch_array($sth);
-                        echo '<img src="data:image/png;base64,'.base64_encode($result['Imagen']).'"/>';;
+                        echo '<img src="data:image/png;base64,'.base64_encode($result['Imagen']).'"/>';
                         $conn->close();
                     ?>
                 </div>
