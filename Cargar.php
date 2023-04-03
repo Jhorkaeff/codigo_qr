@@ -4,7 +4,7 @@
 	<div class="fondo-animado">	
 		<section class="main">
 			<form action="car.php" method="post" enctype="multipart/form-data">
-				<div class = "col-sm-8">
+				<div class = "contenidou">
 					<h3>DBQR</h3>
 						<br>
 						<h4>IMPORTANTE: <span><font color="white">Agregue los datos del estudiante</font></span></h4>
@@ -37,11 +37,10 @@
 							</select>
 						</div>
 				</div>
-				<button type="submit" value="Generar" name="generar">Guardar</button>
+				<button type="submit" value="Generar" name="generar">Cargar</button>
 			</form>
 		</section>
-
-		<?php include("template/Pie.php"); ?> 
 	</div>
+	<?php include("template/Pie.php"); ?> 
 </body>
 </html>
