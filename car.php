@@ -1,3 +1,5 @@
+<?php include("template/Cabacera.php"); ?>
+
 <?php 
 	include('phpqrcode/qrlib.php');
 	if(isset($_POST['generar'])){
