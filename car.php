@@ -17,7 +17,6 @@
 
 		echo $urle;
 		echo $urls;
-
 		
 		$mysqli = new mysqli('localhost','root','','sire');
 		$result = "SELECT Nombre FROM estudiante WHERE ID_E = '$ID'";
