@@ -1,3 +1,5 @@
+<?php include("template/Cabacera.php"); ?>
+
 <?php 
 	include('phpqrcode/qrlib.php');
 	if(isset($_POST['generar'])){
@@ -82,7 +84,6 @@
 		echo "Error updating record: " . $conn->error;
 		}
 		$conn->close();
-
 	}
 ?>
 <?php include("template/Pie.php"); ?>
