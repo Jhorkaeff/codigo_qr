@@ -5,18 +5,15 @@
 		<section class="main">
 			<form action="Cargar.php" method="post" enctype="multipart/form-data">
 				<div class = "contenidou">
-					<h3>DBQR</h3>
+					<h3>Cargar QR</h3>
 					
 						<h4>IMPORTANTE: <span><font color="white">Agregue los datos del estudiante</font></span></h4>
 						
 						<li>Calidad H de imagen: <span><font color="white">se le dara la mas alta calidad posible a las imagenes qr</font></span></li>
 						
 						<li>Tamaño 10: <span><font color="white">Calidad H de imagen: el tamaño proporcional que se le dara a las qr</font></span></li>
-						
-						<p>Nivel: H</p>
-						<p>Tamaño: 10</p>
 						<div class="form-group">
-							<label>ID: </label>
+							<label>Buscar: </label>
 							<select name="ID">
 								<option value="1">Selecciona la ID:</option>
 								<?php
@@ -43,8 +40,8 @@
                     		<option value="salida">Salida</option>
 							</select>
 						</div>
+					<button type="submit" value="Generar" name="generar">Cargar</button>
 				</div>
-				<button type="submit" value="Generar" name="generar">Cargar</button>
 			</form>
 		</section>
 		</div>
