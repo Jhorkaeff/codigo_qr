@@ -15,7 +15,7 @@
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Crear QR</a></li>
-                        <li><a href="#">Cargar QR</a></li>
+                        <li><a href="Cargar.php">Cargar QR</a></li>
                     </ul>
                 </nav>
             </div>
