@@ -57,6 +57,7 @@
 ?>
 <?php include("template/Cabacera.php"); ?>
     <link rel="stylesheet" href="CSS/css/add.css">
+    <div class="color-fondo">
         <div class ="contenedor2">
             <form>
                 <div class="picture">
@@ -277,6 +278,7 @@
                     ?>
                 </div>
             </form>
+        </div>
         </div>
     </body>
 </html>
