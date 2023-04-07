@@ -62,6 +62,9 @@
             <div class ="contenedor2">
                 <form>
                     <div class="picture">
+                        <div class="logo-gtup">
+                        <img class="alinear" src="img/logotec.png">
+                        </div>
                         <?php
                             $servername = "localhost";
                             $username = "root";
