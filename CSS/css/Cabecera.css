@@ -2,14 +2,15 @@
 
 body
 {
-    font-family: sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0rem;
     line-height: 1.6em;
     margin: 0;
     overflow-x: hidden;
 }
 .header{
-    background: #fdba02;
+    background: #ff8000;
+    background: linear-gradient(to left, #c96604, rgb(255, 123, 0));
     color: #fff;
     padding: 1.5rem 0;
     position: fixed;
@@ -47,5 +48,5 @@ body
     border-radius: 5px;
 }
 .navigation ul li a:hover{
-    background: rgb(4, 95, 233);
+    background: rgb(4, 14, 160);
 }

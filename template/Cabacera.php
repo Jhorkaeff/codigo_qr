@@ -13,12 +13,12 @@
     <body>
         <header class="header">
             <div class="container logo-nav">
-                <img class="logo1" src="img/sirelogo">
+                <img class="logo1" src="img/SireLogo.png">
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Crear QR</a></li>
-                        <li><a href="Cargar.php">Cargar QR</a></li>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">CREAR QR</a></li>
+                        <li><a href="Cargar.php">CARGAR QR</a></li>
                     </ul>
                 </nav>
             </div>

@@ -3,7 +3,7 @@ footer
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: linear-gradient(90deg, #0205a3, #2c04bb);
     height: auto;
     width: 100vw;
     font-family: "Open Sans";
@@ -17,6 +17,11 @@ footer
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+.grid4{
+    grid-template-columns: 100% 100%;
+    text-align: center;
+    justify-content: center;
 }
 .footer-contenido h3
 {
@@ -39,6 +44,7 @@ footer
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    margin-left: -50px;
 }
 .socials li
 {
@@ -60,7 +66,7 @@ footer
 }
 .footer-bottom
 {
-    background: #000;
+    background: #010636;
     width: 100vw;
     padding: 20px 0;
     text-align: center;
